@@ -8,8 +8,41 @@ const questions = [];
     [
         {
             type: 'input',
-            message:"What is your Project Title?",
+            questions:"What is your Project Title?",
             name:'Title',
+            validate: (value)=>{if(value){return true} else {return 'Requires Input to Proceed'}}
+        }
+    ],
+    [
+        {
+            type:'input',
+           questions:"Provide a short Description of your project.",
+            name:'Description',
+            validate: (value)=>{if(value){return true} else {return 'Requires Input to Proceed'}}
+        }
+    ],
+    [
+        {
+            type:'input',
+            questions:'Please provide a screenshot/video of you project',
+            name:'Screenshot/Video',
+            validate: (value)=>{if(value){return true} else {return 'Requires Input to Proceed'}}
+        }
+    ],
+    [
+        {
+            type:'input',
+            questions:'Any Credits?',
+            name:'Credits',
+            validate: (value)=>{if(value){return true} else {return 'Requires Input to Proceed'}}
+
+        }
+    ],
+    [
+        {
+            type:'input',
+            questions:'What License would you like to use?',
+            name:'License',
             validate: (value)=>{if(value){return true} else {return 'Requires Input to Proceed'}}
         }
     ]
