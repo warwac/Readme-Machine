@@ -45,6 +45,22 @@ const questions = [];
             name:'License',
             validate: (value)=>{if(value){return true} else {return 'Requires Input to Proceed'}}
         }
+    ],
+    [
+        {
+            type:'input',
+            questions:'What is your GitHub username',
+            name:'GitHub',
+            validate: (value)=>{if(value){return true} else {return 'Requires Input to Proceed'}}
+        }
+    ],
+    [
+        {
+            type:'input',
+            questions:'What is your Email address',
+            name:'Email',
+            validate: (value)=>{if(value){return true} else {return 'Requires Input to Proceed'}}
+        }
     ]
 
 // TODO: Create a function to write README file
